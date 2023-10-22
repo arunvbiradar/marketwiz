@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "96b804a8-9084-4ac2-ac8f-fc96a9571e20",
+		"name": "MarketWiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "356070"
+	},
+	"item": [
+		{
+			"name": "users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7145/",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"displayName\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7145/create",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"displayName\": \"ADMIN\",\r\n    \"email\": \"admin@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7145/user/oPTtgy3LGGwu6h7gmKdz",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"user",
+						"oPTtgy3LGGwu6h7gmKdz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"displayName\": \"adminUpdated\",\r\n    \"email\": \"adminUpdated@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7145/user/oPTtgy3LGGwu6h7gmKdz",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"user",
+						"oPTtgy3LGGwu6h7gmKdz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wikipedia-search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7145/search?q=instagram",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "instagram"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"displayName\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7145/search?q=facebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7145",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "facebook"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
